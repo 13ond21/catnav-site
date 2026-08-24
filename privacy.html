@@ -36,9 +36,10 @@
     </p>
 
     <div class="note">
-      CatNav is designed to be <strong>privacy-first and offline-first</strong>. There are no accounts, no
-      sign-ins and no profiles. The café directory is public data, and anything you mark as a favourite or
-      visited stays on your device.
+      CatNav is <strong>privacy-first and offline-first</strong>. No account is needed to browse the café
+      directory — favourites and visits stay on your device unless you choose otherwise. You can optionally
+      sign in with just your email (a one-time code, no password) to follow cafés, keep your visits synced,
+      or post updates as a café owner; that account data is described below and can always be deleted.
     </div>
 
     <h2>1. What we collect</h2>
@@ -49,6 +50,7 @@
       <li><strong>Crash diagnostics:</strong> anonymous crash and error reports via Firebase Crashlytics.</li>
       <li><strong>Location (optional):</strong> if you tap "near me", we ask for your device location so we can sort cafés by distance. It is never stored or sent to our servers.</li>
       <li><strong>Suggestions you send:</strong> if you tap "Suggest an edit", the note (and which café it is about) is sent anonymously. We ask you not to include personal data in notes.</li>
+      <li><strong>Account data (only if you sign in):</strong> your email address, a display name derived from it, the cafés you follow, your visit diary, and any café claims, posts or reports you make. Stored in Supabase and private to you unless you choose to post publicly.</li>
     </ul>
 
     <h2>2. Advertising</h2>
@@ -76,6 +78,13 @@
       prices, resident cats). It is served from a Supabase database hosted in the UK/EU. This is not personal
       data. The app downloads the directory to your device so it works offline.
     </p>
+    <p>
+      If you sign in, your <strong>account data</strong> (email, display name, follows, visit diary, and any
+      owner claims, posts or reports) is stored in the same Supabase project. Row-level security keeps it
+      private to you (and moderators); only <strong>approved</strong> café posts are visible to other users.
+      You can delete it any time — see section 6 and our
+      <a href="delete-data.html">data deletion page</a>.
+    </p>
 
     <h2>5. Permissions</h2>
     <ul>
@@ -85,7 +94,8 @@
 
     <h2>6. Your rights</h2>
     <p>
-      Because CatNav has no accounts, most of your data never leaves your device. Under UK GDPR you have the
+      Browsing CatNav needs no account, so most of your data never leaves your device. If you signed in,
+      your account data lives in Supabase and you can delete it at any time. Under UK GDPR you have the
       right to access, correct, delete or object to the processing of any personal data we hold. To exercise
       any of these rights, email <a href="mailto:support@cloudyni.com">support@cloudyni.com</a> and we will
       respond within 30 days. See also our <a href="delete-data.html">data deletion page</a>.
@@ -96,6 +106,8 @@
       Analytics are retained per Google's retention settings. Suggestions are kept only as long as needed to
       review and improve the directory. We use standard industry security practices, and the directory data
       is read-only to the public (writes happen only through our moderated import tool).
+      Account data is retained until you ask us to delete it (we respond within 30 days); approved posts you
+      wrote may be kept only as long as needed for moderation or legal reasons, then removed or anonymised.
     </p>
 
     <h2>8. Children</h2>
