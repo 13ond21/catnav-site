@@ -1,33 +1,39 @@
-/* CatNav — legal pages (privacy / terms / delete-data) */
+/* CatNav — legal pages (privacy / terms / delete-data) — matches the brand */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,600&family=Nunito:wght@400;600;700;800&display=swap');
+
 :root {
-  --caramel: #a9531f;
-  --caramel-soft: #f6e3d2;
-  --cream: #fdf6ef;
-  --espresso: #241b13;
-  --muted: #6b6157;
+  --espresso: #291d14;
+  --espresso-soft: #4a3524;
+  --caramel: #b05c29;
+  --rust: #773e1b;
+  --cream: #fbf4ea;
+  --cream-deep: #f4e9d8;
   --card: #ffffff;
-  --border: #eadfd5;
+  --muted: #6f6356;
+  --border: #eadfd3;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  font-family: "Nunito", "Segoe UI", system-ui, Arial, sans-serif;
   color: var(--espresso);
   background: var(--cream);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; }
 .page-bg {
   position: fixed; inset: 0; z-index: -1;
   background:
-    radial-gradient(1100px 480px at 85% -10%, var(--caramel-soft), transparent 60%),
-    radial-gradient(900px 420px at -10% 110%, #f1e2d1, transparent 55%),
+    radial-gradient(1100px 480px at 85% -10%, #f3ddc3, transparent 60%),
+    radial-gradient(900px 420px at -10% 110%, #efdfc9, transparent 55%),
     var(--cream);
 }
 .site-header {
   position: sticky; top: 0; z-index: 5;
-  background: rgba(253, 246, 239, 0.92);
-  backdrop-filter: blur(8px);
+  background: rgba(251, 244, 234, 0.9);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
 .site-header .inner {
@@ -38,23 +44,24 @@ body {
   display: inline-flex; align-items: center; gap: 10px;
   font-weight: 800; font-size: 18px; color: var(--espresso);
   text-decoration: none;
+  font-family: "Fraunces", Georgia, serif;
 }
-.brand img { border-radius: 10px; }
+.brand img { border-radius: 12px; box-shadow: 0 4px 10px rgba(41, 29, 20, 0.18); }
 .nav { display: flex; gap: 6px; flex-wrap: wrap; }
 .nav a {
   color: var(--espresso); text-decoration: none;
-  padding: 8px 12px; border-radius: 999px; font-size: 14.5px; font-weight: 600;
+  padding: 8px 12px; border-radius: 999px; font-size: 14.5px; font-weight: 700;
 }
-.nav a:hover { background: var(--caramel-soft); }
+.nav a:hover { background: var(--cream-deep); }
 .nav a[aria-current="page"] { background: var(--caramel); color: #fff; }
 .wrap { max-width: 820px; margin: 0 auto; padding: 40px 20px 80px; }
-.doc h1 { font-size: 34px; line-height: 1.2; margin: 0 0 6px; }
+.doc h1 { font-size: 34px; line-height: 1.2; margin: 0 0 6px; font-weight: 900; }
 .doc .doc-meta {
   font-size: 14.5px; color: var(--muted);
   border: 1px solid var(--border); background: var(--card);
   border-radius: 14px; padding: 14px 18px; margin: 18px 0 26px;
 }
-.doc .doc-meta code { background: var(--caramel-soft); border-radius: 6px; padding: 1px 6px; }
+.doc .doc-meta code { background: var(--cream-deep); border-radius: 6px; padding: 1px 6px; }
 .doc h2 { font-size: 22px; margin: 34px 0 10px; }
 .doc h3 { font-size: 17px; margin: 24px 0 8px; }
 .doc p, .doc li { font-size: 15.5px; }
@@ -62,7 +69,7 @@ body {
 .doc a { color: var(--caramel); text-decoration: underline; text-underline-offset: 2px; }
 .doc a:hover { text-decoration-thickness: 2px; }
 .doc .note {
-  background: var(--caramel-soft); border: 1px solid #e6c9ad;
+  background: var(--cream-deep); border: 1px solid #e6c9ad;
   border-radius: 14px; padding: 14px 18px; font-size: 15px; margin: 18px 0;
 }
 .footer {
