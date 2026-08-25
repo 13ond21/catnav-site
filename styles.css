@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Nunito:wght@400;600;700;800&display=swap');
 
 :root {
-  --espresso: #291d14;
-  --espresso-soft: #4a3524;
+  --espresso: #1f3a5f;
+  --espresso-soft: #2c4d7c;
   --caramel: #b05c29;
-  --rust: #773e1b;
+  --rust: #8a4a1e;
   --cream: #fbf4ea;
   --cream-deep: #f4e9d8;
   --card: #ffffff;
   --muted: #6f6356;
   --border: #eadfd3;
-  --shadow: 0 18px 40px rgba(41, 29, 20, 0.14);
+  --shadow: 0 18px 40px rgba(31, 58, 95, 0.16);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
@@ -85,7 +85,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; }
   transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 .btn:hover { transform: translateY(-1px); }
-.btn-primary { background: var(--caramel); color: #fff; box-shadow: 0 10px 22px rgba(176, 92, 41, 0.32); }
+.btn-primary { background: var(--caramel); color: #fff; box-shadow: 0 10px 22px rgba(176, 92, 41, 0.30); }
 .btn-primary:hover { background: var(--rust); }
 .btn-secondary { background: var(--card); color: var(--espresso); border: 1px solid var(--border); }
 .btn-secondary:hover { border-color: var(--caramel); color: var(--caramel); }
@@ -113,7 +113,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; }
 
 .cats-strip {
   margin-top: 60px;
-  background: linear-gradient(120deg, var(--espresso), var(--espresso-soft));
+  background: linear-gradient(120deg, #10396c, #2c4d7c);
   color: #fff; border-radius: 26px; padding: 34px 30px;
   display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
 }
@@ -123,8 +123,8 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; }
 
 .cta {
   margin-top: 70px; text-align: center;
-  background: radial-gradient(600px 260px at 50% -20%, #b05c29, transparent 70%),
-    linear-gradient(120deg, var(--espresso), var(--espresso-soft));
+  background: radial-gradient(600px 260px at 50% -20%, #6590b8, transparent 70%),
+    linear-gradient(120deg, #10396c, #2c4d7c);
   border-radius: 28px; padding: 56px 30px; color: #fff;
   box-shadow: var(--shadow);
 }
